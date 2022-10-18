@@ -61,7 +61,7 @@ This relationship is representing that a person would be meeting another person.
 
 - `:MOVE` Relationship
 
-It connects Event Node to other Event Node of a specific person (Connect Event Nodes of the one person).
+It connects Event Node to other Event Node of a specific person (Connects Event Nodes of one person).
 This relationship means the sequence of a person's activity based on check-in time.
 
 <p align="center">
@@ -72,4 +72,8 @@ This relationship means the sequence of a person's activity based on check-in ti
 
 
 ## Objective: <br> Tracking covid19 positive cases
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/196409300-f5ac0c5d-0e92-4062-8326-1108a8c6dbdb.png" />
+</p>
 
