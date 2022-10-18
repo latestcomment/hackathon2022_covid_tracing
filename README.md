@@ -31,7 +31,7 @@ The physical model would look like picture below
   <img src="https://user-images.githubusercontent.com/98151352/196351657-559d44c2-3578-4e7f-a6df-bc92005b111e.png" />
 </p>
 
-# Objectives
+# Our Objectives
 
 There are 3 main objectives in our case,
 
@@ -39,4 +39,37 @@ There are 3 main objectives in our case,
 - Tracking covid 19 positive cases.
 - Analysing the susceptibility of a person getting infected.
 
-# Inside `NEO4J`: Analyzing the data ... 
+# Here comes the Assumptions
+
+There are several things we needed to assumed,
+
+We assumed
+
+- check-in data meant the person who check-in would be going inside or did activity in those locations.
+- 
+
+# Inside `NEO4J`: Analyzing the data ...
+
+After loading the data to Neo4j according to our data model,
+we inferred our graph with new relationships, to accoumplish our objectives.
+
+- `:PROX_MEET` Relationship
+
+It connects Event nodes to other Event nodes based on the check-in data at a particular time window.
+In our case, we assumed the interval of check-in time of 2 people that would be meeting is under **15 minutes**.
+This relationship is representing that a person would be meeting another person.
+
+- `:MOVE` Relationship
+
+It connects Event Node to other Event Node of a specific person (Connect Event Nodes of the one person).
+This relationship means the sequence of a person's activity based on check-in time.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/196360381-9a33bf0a-08dd-4151-af57-19920a8e00c4.png" />
+</p>
+
+## Objective: <br> Finding out the vulnarable point/location of Covid 19 infection
+
+
+## Objective: <br> Tracking covid19 positive cases
+
