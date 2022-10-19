@@ -36,7 +36,7 @@ The physical model would look like picture below
 There are 3 main objectives in our case,
 
 - Finding out the vulnarable point/location of Covid 19 infection.
-- Tracking covid 19 positive cases.
+- Tracking Covid 19 positive cases.
 - Analysing the susceptibility of a person getting infected.
 
 # Here comes the Assumptions
@@ -73,7 +73,32 @@ This relationship means the sequence of a person's activity based on check-in ti
 
 ## Objective: <br> Tracking covid19 positive cases
 
+This case comes after testing process (PCR or any test method). We need to find out who people that the patient interacted with in are. 
+
+The poeple interaction network would be like image below,
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/98151352/196409300-f5ac0c5d-0e92-4062-8326-1108a8c6dbdb.png" />
+  <img src="https://user-images.githubusercontent.com/98151352/196590342-e592320e-bb21-479f-bffc-0b7d2a376552.png" />
 </p>
+
+the red Person node is our starting point. We will traverse to its Event node, through PROX_MEET relationship to others Event node then go to another Person node (the yellow ones) which is our target point. The target points represent the people who the patient interacted with in some period of time.
+
+For this case, we didn't have positive tested data. So, at some point, we altered the covid status data of Person to a Positive value.
+
+The scenario is that the person is tested positive, then we look at its interaction network.
+
+Let's say a Person with nik `e7cb7fda6bb6b252a604c65a10a59193d68c26cb5004d1a06be3ea4105337c5b` is tested positive on 18 February 2022.
+
+Image below shows the Event or activity he did when he had positive covid status
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/196601916-9ddb9906-026c-47e5-9f1e-d01b9f3b3309.png" />
+</p>
+
+We look at its interaction network from 3 days before he's tested to 7 days after he's tested.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/196627974-d8882914-5354-4c72-88c9-32e28809cbe0.png" />
+</p>
+
+The yellow box indicates the target point which means people that interact with patient (red node).
 
