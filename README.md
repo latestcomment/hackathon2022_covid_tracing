@@ -37,7 +37,7 @@ There are 3 main objectives in our case,
 
 - Finding out the vulnarable point/location of Covid 19 infection.
 - Tracking Covid 19 positive cases.
-- Analysing the susceptibility of a person getting infected.
+- Analyzing the susceptibility of a person getting infected.
 
 # Here comes the Assumptions
 
@@ -101,4 +101,6 @@ We look at its interaction network from 3 days before he's tested to 7 days afte
 </p>
 
 The yellow box indicates the target point which means people that interact with patient (red node).
+
+## Objective: <br> Analyzing the susceptibility of a person getting infected
 
