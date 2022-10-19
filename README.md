@@ -10,7 +10,7 @@ This REPO contains analysis for covid tracing in Indonesia from February to Augu
 
 The data is from Metadata Peduli Lindungi Apps publicly shared by HACKATHON 2022 Team.
 
-In this case, not all data is used. Only top 15 of the most number check-in in sub-category.
+In this case, not all data is used. Only top 15 of the most number check-in in sub-category are used.
 
 For analysis purposes, we added a new column (dummy data) to the original data about Outlet name, so we could find the exact (more specific) location of people check-in.
 
@@ -39,7 +39,7 @@ There are 3 main objectives in our case,
 - Tracking Covid 19 positive cases.
 - Analyzing the susceptibility of a person getting infected.
 
-# Here comes the Assumptions
+# Here comes the assumptions
 
 There are several things we needed to assumed,
 
