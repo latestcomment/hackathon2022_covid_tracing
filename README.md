@@ -2,6 +2,9 @@
 
 This REPO contains analysis for covid tracing in Indonesia from February to August 2022 using Graph Analytics.
 
+**Please kindly refer to our formal writing in this [Link](https://google.com)
+and explore more in our [Dashboard](https://192.168.18.192:443)**
+
 `Spoiler Alert` 
 
 **Neo4j** would be our primary weapon :wink:.
@@ -12,14 +15,14 @@ The data is from Metadata Peduli Lindungi Apps publicly shared by HACKATHON 2022
 
 In this case, not all data is used. Only top 15 of the most number check-in in sub-category are used.
 
-For analysis purposes, we added a new column (dummy data) to the original data about Outlet name, so we could find the exact (more specific) location of people check-in.
+For analysis purposes, we added a new column (dummy data) to the original data about Place name, so we could find the exact (more specific) location of people check-in. And for visualization purposes we create random coordinate for each place.
 
 # Data Model
 
 The data model is created in Neo4j Labs: [arrows.app](https://arrows.app/)
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/98151352/196348325-68dffc58-0436-494e-a242-519cacc318a2.png" />
+  <img src="https://user-images.githubusercontent.com/98151352/197609684-08ce3afe-20cf-449a-ac64-b815e8c98606.png" />
 </p>
 
 In our data model, it shows that we have Person attend an Event or we can say that he/she does an activity with check-in/check-out, covid status and user color status information.
@@ -28,7 +31,7 @@ Then as we **Traverse** more hops, we have informations about which outlet and w
 The physical model would look like picture below
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/98151352/196351657-559d44c2-3578-4e7f-a6df-bc92005b111e.png" />
+  <img src="https://user-images.githubusercontent.com/98151352/197609511-2e8b64fd-d824-4a9e-9464-b315b265f236.png" />
 </p>
 
 # Our Objectives
@@ -70,6 +73,16 @@ This relationship means the sequence of a person's activity based on check-in ti
 
 ## Objective: <br> Finding out the vulnarable point/location of Covid 19 infection
 
+Take a look at the people who have black `user_color_status`. With our assumption, we computed the vulnerability score of the places those people went. The score (in perc, %) is calculated by comparison of the total watchlist (black) check-in and total of all check-in per day at particular place.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/197607559-c280e020-0e84-4952-9f2b-aad4781a784f.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/197608173-f14602e8-4880-4dd4-be41-b7ef093cbdbc.png" />
+</p>
+
 
 ## Objective: <br> Tracking covid19 positive cases
 
@@ -104,3 +117,10 @@ The yellow box indicates the target point which means people that interact with 
 
 ## Objective: <br> Analyzing the susceptibility of a person getting infected
 
+Susceptibility score parameters:
+
+- Vulnerability score of places that the person visited
+- `user_color_score` of person
+- Frequency of person meeting another people with black `user_color_status`
+
+The susceptibility score is attached to each event,
