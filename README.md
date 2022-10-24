@@ -124,3 +124,5 @@ Susceptibility score parameters:
 - Frequency of person meeting another people with black `user_color_status`
 
 The susceptibility score is attached to each event,
+
+*in progress*
