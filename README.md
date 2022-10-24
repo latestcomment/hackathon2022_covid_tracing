@@ -2,7 +2,7 @@
 
 This REPO contains analysis for covid tracing in Indonesia from February to August 2022 using Graph Analytics.
 
-**Please kindly refer to our formal writing in this [Link](https://google.com)
+**Please kindly refer to our formal writing in this [Link](https://google.com) for more detail
 and explore more in our [Dashboard](https://192.168.18.192:443)**
 
 `Spoiler Alert` 
@@ -39,7 +39,7 @@ The physical model would look like picture below
 There are 3 main objectives in our case,
 
 - Finding out the vulnarable point/location of Covid 19 infection.
-- Tracking Covid 19 positive cases.
+- Tracing Covid 19 positive cases.
 - Analyzing the susceptibility of a person getting infected.
 
 # Here comes the assumptions
