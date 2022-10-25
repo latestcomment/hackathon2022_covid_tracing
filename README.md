@@ -2,7 +2,7 @@
 
 This REPO contains analysis for covid tracing in Indonesia from February to August 2022 using Graph Analytics.
 
-**Please kindly refer to our formal writing in this [Link]([https://google.com](https://drive.google.com/file/d/1FRx6nZ2wraRm7hmW1RZmYA1v5c_KnSHv/view?usp=sharing)) for more detail
+**Please kindly refer to our formal writing in this [Link](https://drive.google.com/file/d/1FRx6nZ2wraRm7hmW1RZmYA1v5c_KnSHv/view?usp=sharing) for more detail
 and explore more in our [Dashboard](http://dashboard.dintegrasi.com/)**
 
 `Spoiler Alert` 
