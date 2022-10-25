@@ -2,8 +2,8 @@
 
 This REPO contains analysis for covid tracing in Indonesia from February to August 2022 using Graph Analytics.
 
-**Please kindly refer to our formal writing in this [Link](https://google.com) for more detail
-and explore more in our [Dashboard](https://192.168.18.192:443)**
+**Please kindly refer to our formal writing in this [Link]([https://google.com](https://drive.google.com/file/d/1FRx6nZ2wraRm7hmW1RZmYA1v5c_KnSHv/view?usp=sharing)) for more detail
+and explore more in our [Dashboard](http://dashboard.dintegrasi.com/)**
 
 `Spoiler Alert` 
 
@@ -125,4 +125,7 @@ Susceptibility score parameters:
 
 The susceptibility score is attached to each event,
 
-*in progress*
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/98151352/197688330-14352635-202b-4f90-864e-dce900cbbea5.png" />
+</p>
+
